@@ -68,7 +68,8 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   supplies_with_bbq = []
-  holiday_hash.match 
+  supplies_with_bbq.push(holiday_hash[:summer][:fourth_of_july][1])
+  supplies_with_bbq.push(holiday_hash[:spring][])
 end
 
 
