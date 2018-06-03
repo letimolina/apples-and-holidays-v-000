@@ -68,9 +68,19 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   supplies_with_bbq = []
-  supplies_with_bbq.push(holiday_hash[:summer][:fourth_of_july][1])
-  supplies_with_bbq.push(holiday_hash[:spring][:memorial_day][0])
-  supplies_with_bbq
+  holiday_hash.each do |season, holiday|
+    holiday.each do |event, supplies|
+      supplies.each do |supply|
+        if supply == "BBQ"
+          supplies_with_bbq.push()
+      event.to_s.split("_").each do |event_name|
+        upcase_holidays << event_name.capitalize
+      end
+    else
+      upcase_holidays << event.capitalize
+    end
+    puts "  #{upcase_holidays.join(" ")}: #{supplies.join(", ")}"
+ 
 end
 
 
