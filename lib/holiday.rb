@@ -72,14 +72,10 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |event, supplies|
       supplies.each do |supply|
         if supply == "BBQ"
-          supplies_with_bbq.push()
-      event.to_s.split("_").each do |event_name|
-        upcase_holidays << event_name.capitalize
+          supplies_with_bbq.push(holiday)
       end
-    else
-      upcase_holidays << event.capitalize
     end
-    puts "  #{upcase_holidays.join(" ")}: #{supplies.join(", ")}"
+ supplies_with_bbq
  
 end
 
