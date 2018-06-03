@@ -72,11 +72,12 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |event, supplies|
       supplies.each do |supply|
         if supply == "BBQ"
-          supplies_with_bbq.push(holiday)
+          supplies_with_bbq.push(event)
       end
     end
+  end
+ end
  supplies_with_bbq
- 
 end
 
 
